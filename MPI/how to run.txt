@@ -1,0 +1,11 @@
+Setup mpjexpress:
+echo $MPJ_Home
+mpjrun.sh
+ls $MPJ_HOME/lib/mpj.jar 
+
+how to run:
+export MPJ_HOME=$PWD/mpj
+export PATH=$MPJ_HOME/bin:$PATH
+
+compile; javac -cp $MPJ_HOME/lib/mpj.jar filename.java
+execute: mpjrun.sh - np 4 filename
