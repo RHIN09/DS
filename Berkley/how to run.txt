@@ -1,0 +1,7 @@
+Commands:
+python Server.py
+enter the number of client 
+
+python Client.py
+enter ip address or localhost
+number of terminals with this coomand = number of clients 
