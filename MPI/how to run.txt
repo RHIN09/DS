@@ -4,8 +4,8 @@ mpjrun.sh
 ls $MPJ_HOME/lib/mpj.jar 
 
 how to run:
-export MPJ_HOME=$PWD/mpj
+export MPJ_HOME=/home/vboxuser/Practice/MPI/mpj-v0_44 -Path of folder
 export PATH=$MPJ_HOME/bin:$PATH
 
-compile; javac -cp $MPJ_HOME/lib/mpj.jar filename.java
-execute: mpjrun.sh - np 4 filename
+javac -cp .:$MPJ_HOME/lib/mpj.jar ArrSum.java
+mpjrun.sh -np 4 -cp .:$MPJ_HOME/lib/MPJ.JAR ArrSum
